@@ -4,6 +4,7 @@ import org.brujula.Figuras.Cuadrados.Cuadrado;
 import org.brujula.Figuras.Cuadrados.Rectangulo;
 import org.brujula.Figuras.Cuadrados.Rombo;
 import org.brujula.Figuras.Figura;
+import org.brujula.Figuras.Triangulos.Triangulo;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
