@@ -38,4 +38,20 @@ public class FigurasGeometricasTest
         cuadrado.pintar(); //Debería salir cuadrado
         cuadradoC.pintar(); //Debería salir rectangulo
     }
+
+    @Test
+    public void rectanguloRomboTest(){
+        Figura rombo = new Rombo();
+        Cuadrado romboide = new Rombo("nombre");
+        Rombo romboloide = new Rombo("nombre");
+        assertTrue(romboide == romboloide);
+        assertTrue(rombo == romboloide);
+        assertEquals("nombre", romboloide.getNombre());
+        assertEquals("nombre", romboide.getNombre());
+        rombo.setNombre("rombo");
+        assertEquals("rombor", rombo.getNombre());
+        rombo.pintar(); //Debería dar rombo
+        romboide.pintar(); //Debería dar nombre
+        romboloide.pintar(); // Debería dar nombre
+    }
 }
