@@ -15,12 +15,12 @@ public class FigurasGeometricasTest
     @Test
     public void figuraTest(){
         /*
+        Probamos si la clase funcionará, al confirmado queda constancia del uso de casos test para ver el funcionamiento
         Figura figura = new Figura();
         Figura figuraGeometrica = new Figura("nombre");
         figura.setNombre("Cuadrado");
         assertEquals("Cuadrado", figura.getNombre());
         assertEquals("nombre", figuraGeometrica.getNombre());
-        Probar si el metodo pintar funcionará, lugo lo convertiremos en abstracto.
         figura.pintar();
         figuraGeometrica.pintar();
          */
