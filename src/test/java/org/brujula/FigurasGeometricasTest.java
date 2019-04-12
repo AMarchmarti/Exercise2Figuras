@@ -18,8 +18,9 @@ public class FigurasGeometricasTest
         figura.setNombre("Cuadrado");
         assertEquals("Cuadrado", figura.getNombre());
         assertEquals("nombre", figuraGeometrica.getNombre());
-        //Probar si el metodo pintar funcionará, lugo lo convertiremos en abstracto.
-        figura.pintar();
-        figuraGeometrica.pintar();
+        /*Probar si el metodo pintar funcionará, lugo lo convertiremos en abstracto.
+         figura.pintar();
+         figuraGeometrica.pintar();
+         */
     }
 }
