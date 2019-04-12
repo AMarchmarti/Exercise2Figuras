@@ -1,6 +1,7 @@
 package org.brujula;
 
 import org.brujula.Figuras.Cuadrados.Cuadrado;
+import org.brujula.Figuras.Cuadrados.Rectangulo;
 import org.brujula.Figuras.Cuadrados.Rombo;
 import org.brujula.Figuras.Figura;
 import org.junit.Test;
@@ -68,5 +69,20 @@ public class FigurasGeometricasTest
         rect.pintar(); //Debería salir cuadrado
         rectan.pintar(); //Debería salir rectangulo
         rectangulo.pintar(); //Debería salir cuadrado1
+    }
+
+    @Test
+    public void trianguloTest(){
+        Figura triangulo = new Triangulo();
+        Triangulo piramide = new Triangulo("Triangulo");
+        assertTrue(piramide instanceof Figura);
+        assertTrue(triangulo instanceof Triangulo);
+        triangulo.setNombre("triangulo");
+        assertEquals("triangulo", triangulo.getNombre());
+        assertEquals("Triangulo", piramide.getNombre());
+        piramide.setNombre("piramide");
+        assertEquals("piramide", piramide.getNombre());
+        triangulo.pintar(); //Debería salir triangulo
+        piramide.pintar(); //Debería salir piramide
     }
 }
