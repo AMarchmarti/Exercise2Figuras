@@ -1,6 +1,6 @@
 package org.brujula.Figuras;
 
-public class Figura {
+public abstract class Figura {
 
     //Atributos
     private String nombre = null;
@@ -23,7 +23,5 @@ public class Figura {
     }
 
     //Método que requiere el ejercicio
-    public void pintar(){
-        System.out.println(getNombre());
-    }
+    public abstract void pintar();
 }
