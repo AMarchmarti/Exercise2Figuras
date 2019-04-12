@@ -3,6 +3,7 @@ package org.brujula;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+import org.brujula.Figuras.Cuadrados.Cuadrado;
 import org.brujula.Figuras.Figura;
 import org.junit.Test;
 
@@ -32,9 +33,9 @@ public class FigurasGeometricasTest
         cuadrado.setNombre("cuadrado");
         assertEquals("cuadrado", cuadrado.getNombre());
         assertEquals("Cuadrado", cuadradoC.getNombre());
-        cuadradoC.setNombre("rectamgulo");
-        assertEquals("recatngulo", cuadradoC.getNombre());
-        cuadrado.pintar();
-        cuadradoC.pintar();
+        cuadradoC.setNombre("rectangulo");
+        assertEquals("rectangulo", cuadradoC.getNombre());
+        cuadrado.pintar(); //Debería salir cuadrado
+        cuadradoC.pintar(); //Debería salir rectangulo
     }
 }
