@@ -1,11 +1,11 @@
 package org.brujula;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.brujula.Figuras.Cuadrados.Cuadrado;
+import org.brujula.Figuras.Cuadrados.Rombo;
 import org.brujula.Figuras.Figura;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 /**
  * Unit test for simple App.
@@ -44,14 +44,29 @@ public class FigurasGeometricasTest
         Figura rombo = new Rombo();
         Cuadrado romboide = new Rombo("nombre");
         Rombo romboloide = new Rombo("nombre");
-        assertTrue(romboide == romboloide);
-        assertTrue(rombo == romboloide);
+        assertTrue(romboloide instanceof Figura);
+        assertTrue(romboloide instanceof Cuadrado);
         assertEquals("nombre", romboloide.getNombre());
         assertEquals("nombre", romboide.getNombre());
         rombo.setNombre("rombo");
-        assertEquals("rombor", rombo.getNombre());
+        assertEquals("rombo", rombo.getNombre());
         rombo.pintar(); //Debería dar rombo
         romboide.pintar(); //Debería dar nombre
         romboloide.pintar(); // Debería dar nombre
+
+        //-----------------------Rectangulo--------------------------
+        Figura rectangulo = new Rectangulo();
+        Rectangulo rectan = new Rectangulo("rectangulo");
+        Cuadrado rect = new Rectangulo();
+        assertTrue(rectan instanceof Figura);
+        assertTrue(rectan instanceof Cuadrado);
+        assertEquals("rectangulo", rectan.getNombre());
+        rectangulo.setNombre("cuadrado1");
+        rect.setNombre("cuadrado");
+        assertEquals("cuadrado1", rectangulo.getNombre() );
+        assertEquals("cuadrado", rect.getNombre());
+        rect.pintar(); //Debería salir cuadrado
+        rectan.pintar(); //Debería salir rectangulo
+        rectangulo.pintar(); //Debería salir cuadrado1
     }
 }
